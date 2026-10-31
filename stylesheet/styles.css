@@ -35,6 +35,10 @@ header img {
     height: auto;
 }
 
+nav {
+    text-align: center;
+}
+
 nav ul {
     list-style-type: none;
 }
@@ -49,6 +53,15 @@ nav a {
     color: #0A7288;
     font-weight: bold;
     font-size: 1.2em;
+}
+
+@media screen and (max-width: 500px) {
+    nav li {
+        margin-right: 10px;
+}
+nav a {
+    font-size: 1em;
+}
 }
 
 nav a:hover {
