@@ -1,0 +1,111 @@
+body {
+    background-color: #faf7f2;
+    color: #3a3a3a;
+    font-family: Georgia, "Times New Roman", serif;
+}   
+
+header {
+    background: radial-gradient(ellipse, rgba(0,0,0,0.1) 60%, #faf7f2 100%), url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+}
+
+header h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 15px;
+}
+
+header h1 a{
+    color: white;
+    text-decoration: none;
+}
+
+header img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0A7288;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    background-color: rgba(27, 107, 107, 0.15);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+table {
+    margin: 20px;
+}
+
+tbody td:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 8px 16px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    font-size: .8em;
+}
+
+.techniques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.techniques h2 {
+    width: 100%;
+}
+
+.techniques img {
+    width: 150px;
+    height: auto;
+}
+
+.services-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
