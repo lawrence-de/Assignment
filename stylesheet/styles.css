@@ -1,9 +1,11 @@
+/* Overall page styling: background color, text color, font */
 body {
     background-color: #faf7f2;
     color: #3a3a3a;
     font-family: Georgia, "Times New Roman", serif;
 }   
 
+/* Banner photo darkened slightly */
 header {
     background: radial-gradient(ellipse, rgba(0,0,0,0.1) 60%, #faf7f2 100%), url(../images/banner.jpg);
     background-size: cover;
@@ -12,6 +14,7 @@ header {
     position: relative;
 }
 
+/* Title text sitting on top of the banner  */
 header h1 {
     position: absolute;
     bottom: 20px;
@@ -22,11 +25,13 @@ header h1 {
     padding: 10px 15px;
 }
 
+/* Remove default blue underlined link */
 header h1 a{
     color: white;
     text-decoration: none;
 }
 
+/* Logo on top of banner */
 header img {
     position: absolute;
     top: 20px;
@@ -35,19 +40,23 @@ header img {
     height: auto;
 }
 
+/* Center the navigation menu */
 nav {
     text-align: center;
 }
 
+/* Remove bullets from navigation menu */
 nav ul {
     list-style-type: none;
 }
 
+/* Inline navigation links instead of verticle */
 nav li {
     display: inline;
     margin-right: 30px;
 }
 
+/* Navigation menu appearance */
 nav a {
     text-decoration: none;
     color: #0A7288;
@@ -55,6 +64,7 @@ nav a {
     font-size: 1.2em;
 }
 
+/* Smaller navigation menu on mobile devices */
 @media screen and (max-width: 500px) {
     nav li {
         margin-right: 10px;
@@ -64,61 +74,84 @@ nav a {
 }
 }
 
+/* Navigation menu mouse-over effects */
 nav a:hover {
     background-color: rgba(27, 107, 107, 0.15);
     padding: 5px 10px;
     border-radius: 4px;
 }
 
+/* Center the main heading */
 main h2 {
     text-align: center;
 }
 
+/* Pricing text adjustments */
 caption {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
+/* Center text under photos */
 figcaption {
     text-align: center;
 }
 
+/* Center pricing table */
 table {
-    margin: 20px;
+    margin: 20px auto;
 }
 
+/* Visual mouse-over effect on the pricing table */
 tbody td:hover {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
+/* Space inside cells of the table */
 th, td {
     padding: 8px 16px;
     text-align: left;
 }
 
+/* Footer text centered and smaller */
 footer {
     text-align: center;
     font-size: .8em;
 }
 
+/* Arrange technique photos in a row allowing for auto-alignment for different screen sizes*/
 .techniques {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
+/* Techniques on own row*/
 .techniques h2 {
     width: 100%;
 }
 
+/* Techniques photo sizing */
 .techniques img {
     width: 150px;
     height: auto;
 }
 
+/* Stack techniques and special offerings */
 .services-columns {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
+}
+
+/* Center special offers */
+.offerings p {
+    text-align: center;
+}
+
+/* Center contact details */
+.contact-info {
+    text-align: center;
 }
